@@ -1,79 +1,87 @@
-# Module 5 Challenge: Password Generator
+# Third-Party APIs: Work Day Scheduler
 
-## Overview
+## Your Task
 
-This week’s challenge requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+You'll need to use the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
 
-## Instructions
+## User Story
 
-The following image shows the web application's appearance and functionality:
+```md
+AS AN employee with a busy schedule
+I WANT to add important events to a daily planner
+SO THAT I can manage my time effectively
+```
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+## Acceptance Criteria
 
+The app should:
 
-* Generate a password when the button is clicked
-  * Present a series of prompts for password criteria
-    * Length of password
-      * At least 8 characters but no more than 128.
-    * Character types
-      * Lowercase
-      * Uppercase
-      * Numeric
-      * Special characters ($@%&*, etc)
-  * Code should validate for each input and at least one character type should be selected
-  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
+* Display the current day at the top of the calender when a user opens the planner.
+ 
+* Present timeblocks for standard business hours when the user scrolls down.
+ 
+* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+ 
+* Allow a user to enter an event when they click a timeblock
+
+* Save the event in local storage when the save button is clicked in that timeblock.
+
+* Persist events between refreshes of a page
+
+The following animation demonstrates the application functionality:
+
+![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
+
 
 ## Grading Requirements
 
-This challenge is graded based on the following criteria: 
+This homework is graded based on the following criteria: 
 
 ### Technical Acceptance Criteria: 40%
 
 * Satisfies all of the above acceptance criteria plus the following:
 
-  * The challenge should not produce any errors in the console when you inspect it using Chrome DevTools.
+  * Uses a date utility library to work with date and time
 
 ### Deployment: 32%
 
-* Application deployed at live URL.
+* Application deployed at live URL
 
-* Application loads with no errors.
+* Application loads with no errors
 
-* Application GitHub URL submitted.
+* Application GitHub URL submitted
 
-* GitHub repository that contains application code.
+* GitHub repo contains application code
 
 ### Application Quality: 15%
 
-* Application user experience is intuitive and easy to navigate.
+* Application user experience is intuitive and easy to navigate
 
-* Application user interface style is clean and polished.
+* Application user interface style is clean and polished
 
-* Application resembles the mock-up functionality provided in the challenge instructions.
+* Application resembles the mock-up functionality provided in the homework instructions
 
 ### Repository Quality: 13%
 
-* Repository has a unique name.
+* Repository has a unique name
 
-* Repository follows best practices for file structure and naming conventions.
+* Repository follows best practices for file structure and naming conventions
 
 * Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
+* Repository contains multiple descriptive commit messages
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
+* Repository contains quality README file with description, screenshot, and link to deployed application
 
 ## Review
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+* The URL of the deployed application
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+* The URL of the GitHub repository, with a unique name and a README describing the project
 
 ---
-
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
