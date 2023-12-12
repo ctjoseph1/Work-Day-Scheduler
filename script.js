@@ -4,7 +4,7 @@
     console.log("test", this)
   })
   console.log("js loaded", dayjs().format("DD/MM/YY"));
-$("#currentDay").text(dayjs().format("DD/M/YY")) //How to have month spelled out in text?
+$("#currentDay").text(dayjs().format("DD MMM YY")) //How to have month spelled out in text?
 
 // Color-code each timeblock based on past, present, and future when the timeblock is viewed.
   // >> Present time is Red, Past time is Grey, future time is Green
