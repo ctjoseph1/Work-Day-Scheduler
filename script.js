@@ -8,7 +8,8 @@ var textSaved = $(this).siblings('.description').val()
 //    var textSaved = $('#hour-9 .description').val() //.val extracts the text as we're grabbing from the text area
   console.log(textSaved)
 
- var key = $(this).parent().attr('id') 
+//  var key = $(this).parent().attr('id') 
+var key = "item-" + $(this).parent().attr('id'); // Ensure the key matches the one used when loading
   //saving to local storage
 localStorage.setItem(key, textSaved) 
 
@@ -19,7 +20,6 @@ $("#currentDay").text(dayjs().format("DD MMM YY")) //How to have month spelled o
 
 //Text needs to persist- load back to corresponding text area
 
-// get storage- look at previous projects
 
 $("*[data-store]").each(function () {
     $(this).val(localStorage.getItem("item-" + $(this).attr("data-store")));
@@ -29,9 +29,6 @@ $("*[data-store]").each(function () {
 // Get current hour
 var currentHour = new Date().getHours();
 console.log(currentHour)
-// Color-code each timeblock based on past, present, and future when the timeblock is viewed.
-  // >> Present time is Red, Past time is Grey, future time is Green
-// Get current hour
 
 
 // Loop through each time block
@@ -62,5 +59,14 @@ timeblockIdElement.addClass()
 
 // Save the event in local storage when the save button is clicked in that timeblock.
     // >>Persist events between refreshes of a page
+    $(".time-block textarea").each(function () {
+        var key = "item-" + $(this).closest(".time-block").attr("id");
+        var storedText = localStorage.getItem(key);
+        if (storedText) {
+            $(this).val(storedText);
+        }
+    });
+
+
     //>>Wipes out data when it's a new day- Best approach is an array
 
