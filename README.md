@@ -1,7 +1,7 @@
-****#Description**
+****Description**
 The project at hand is to use the concepts I've learned during class to complete the activity and to use this knowledge to create a Work day-scheduler using Jquery CSS and html (focusing mainly on javascript/jquery to create the fucntionality and interactivity, and using html secondarily to create/edit content using bootstrap).
 
-**#How it went**
+**How it went**
 This project was challenging, and complex to figure out the best way to code in order to make this a success.
 The most challenging part of the project, was figuring out how to make the save buttons correspond with the text area to the left of it. I was able to succesfully use .val to extract the text from the text area using $(this).siblings to save the text. And save the event in the local storage using a combination of using Jquery to select specific elements. Using the .key selector for local storage by concatenating the string "item-" with the id attribute of the closest parent element with the class time-block to the recent text area.
 
@@ -20,7 +20,7 @@ The most challenging part of the project, was figuring out how to make the save 
 * Have the written text persist between refreshes of a page
 
 
-**#This project was built with:**
+**This project was built with:**
 Bootstrap
 Javascript
 Jquery
