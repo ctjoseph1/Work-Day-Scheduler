@@ -68,17 +68,4 @@ timeblockIdElement.addClass()
     });
 
 
-    //>>Wipes out data when it's a new day- Best approach is an array
-    
-   // Function to check if it's a new day and clear local storage array if necessary
-function checkAndClearLocalStorage() {
-    var currentDate = dayjs().format("YYYY-MM-DD");
-    var storedDates = JSON.parse(localStorage.getItem("storedDates")) || [];
-
-    // If it's a new day, clear local storage array
-    if (!storedDates.includes(currentDate)) {
-        localStorage.clear();
-        storedDates.push(currentDate);
-        localStorage.setItem("storedDates", JSON.stringify(storedDates));
-    }
-}
+  
