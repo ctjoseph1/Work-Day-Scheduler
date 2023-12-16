@@ -1,22 +1,11 @@
-# Third-Party APIs: Work Day Scheduler
+#Description
+The project at hand is to use the concepts I've learned during class to complete the activity and to use this knowledge to create a Work day-scheduler using Jquery CSS and html (focusing mainly on javascript/jquery to create the fucntionality and interactivity, and using html secondarily to create/edit content using bootstrap).
 
-## Your Task
+#How it went
+This project was challenging, and complex to figure out the best way to code in order to make this a success.
+The most challenging part of the project, was figuring out how to make the save buttons correspond with the text area to the left of it. I was able to succesfully use .val to extract the text from the text area using $(this).siblings to save the text. And save the event in the local storage using a combination of using Jquery to select specific elements. Using the .key selector for local storage by concatenating the string "item-" with the id attribute of the closest parent element with the class time-block to the recent text area.
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
-
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
-
-The app should:
+##Looking at he project criteria I was succesfully able to do the following, and I am happy that the funcitonality meets the needed requirements:
 
 * Display the current day at the top of the calender when a user opens the planner.
  
@@ -28,60 +17,12 @@ The app should:
 
 * Save the event in local storage when the save button is clicked in that timeblock.
 
-* Persist events between refreshes of a page
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
+* Have the written text persist between refreshes of a page
 
 
-## Grading Requirements
+#This project was built with:
+Bootstrap
+Javascript
+Jquery
 
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Link to deployed project: 
