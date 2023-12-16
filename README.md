@@ -25,4 +25,4 @@ Bootstrap
 Javascript
 Jquery
 
-Link to deployed project: 
+Link to deployed project: https://ctjoseph1.github.io/Work-Day-Scheduler/
